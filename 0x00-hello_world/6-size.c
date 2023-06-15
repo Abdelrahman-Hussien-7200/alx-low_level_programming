@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - Entry point
  *
@@ -21,3 +22,4 @@ int main(void)
 	printf("Size of a long long int: %llu byte(s)\n", sizeof(ll));
 	printf("Size of a float: %f byte(s)\n", sizeof(f));
 	return (0);
+}
