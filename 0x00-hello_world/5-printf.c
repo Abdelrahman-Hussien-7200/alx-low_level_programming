@@ -1,10 +1,11 @@
-include <stdio.h>
+#include <stdio.h>
+
 /**
- *main
+ * main - Entry point
  *
- * Description: print 
+ * Description: printf 
  *
- * return
+ * Return: Always return 0
 */
 
 int main(void)
