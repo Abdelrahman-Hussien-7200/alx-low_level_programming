@@ -2,9 +2,9 @@
 /**
  * main - Entry point
  *
- * Description: print by printf
+ * Description: Print by printf
  *
- * Return: always zero
+ * Return: 0 (Sucess)
 */
 
 int main(void)
