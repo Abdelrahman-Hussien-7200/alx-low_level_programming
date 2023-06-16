@@ -4,8 +4,7 @@
  * main -Entey point
  *
  * Description: All letters execpt q and e
- *
- * Return: 0 success
+ *Return: 0 success
 */
 
 int main(void)
@@ -14,7 +13,7 @@ int main(void)
 
 	for (x = 'a'; x >= 'z'; x++)
 	{
-		if (x != q || x != e)
+		if (x != 'q' || x != 'e')
 		{
 			putchar(x);
 		}
