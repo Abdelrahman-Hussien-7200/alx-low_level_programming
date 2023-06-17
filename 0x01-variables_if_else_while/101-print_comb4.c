@@ -4,6 +4,7 @@
  * main - Entry
  *
  * Description : Nested loops
+ *
  * Return: 0 success
 */
 
@@ -24,16 +25,16 @@ int main(void)
 				if (x1 != x2  && x1 < x2)
 				{
 					if (x2 != x3 && x2 < x3)
+					{
+						putchar(x1);
+						putchar(x2);
+						putchar(x3);
+						if (x1 + x2 + x3 != 55 + 56 + 57)
 						{
-							putchar(x1);
-							putchar(x2);
-							putchar(x3);
-							if (x1 + x2 + x3 != 55 + 56 + 57)
-							{
-								putchar (44);
-								putchar (' ');
-							}
+							putchar (44);
+							putchar (' ');
 						}
+					}
 				}
 			}
 		}
