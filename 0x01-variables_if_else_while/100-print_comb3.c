@@ -12,6 +12,7 @@ int main(void)
 {
 	int x1;
 	int x2;
+
 	for (x1 = 48; x1 <= 57; x1++)
 	{
 		x2 = 48;
@@ -23,7 +24,7 @@ int main(void)
 				putchar(x2);
 				if (x1 + x2 != 56 + 57)
 				{
-					putchar (59);
+					putchar (44);
 					putchar (' ');
 				}
 			}
