@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * main -Entery point
+ * print_alphabet -Entery point
  *
  * Description: loops
  *
- * Return: 0
+ * Return: void
 */
 
 void print_alphabet(void)
