@@ -13,7 +13,7 @@
 
 void print_line(int n)
 {
-	int i, j;
+	int i;
 
 	if (n <= 0)
 	{
