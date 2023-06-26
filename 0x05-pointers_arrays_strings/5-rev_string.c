@@ -1,7 +1,7 @@
 #include <string.h>
 #include "main.h"
 
-i/**
+/**
  * rev_string- Entery
  *
  * Description: Don't swap horses in crossing a stream
