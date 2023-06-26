@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- *swap_int - Entery
- * 
- *Description: Don't swap horses in crossing a stream
- * 
+ * swap_int - Entery
+ *
+ * Description: Don't swap horses in crossing a stream
+ *
  * @a: int
  *
  * @b: int
