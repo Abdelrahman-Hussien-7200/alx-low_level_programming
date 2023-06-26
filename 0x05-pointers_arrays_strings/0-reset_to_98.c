@@ -3,7 +3,7 @@
 /**
  * reset_to_98 - Entry
  *
- * @*n: pointer
+ * @n: pointer
  *
  * Description: pointers
  *
