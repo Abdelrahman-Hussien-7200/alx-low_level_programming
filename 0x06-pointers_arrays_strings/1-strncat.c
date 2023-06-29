@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strcat - Entry
+ * _strncat - Entry
  *
  * @dest: char pointer
  *
