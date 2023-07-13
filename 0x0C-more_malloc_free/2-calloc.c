@@ -13,14 +13,15 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int v, h;
+	int v, h;
 	char *i;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
 
 	h = nmemb + size;
 	i = malloc(h);
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
 	if (i == NULL)
 		return (NULL);
 	for (v = 0; v < h; v++)
