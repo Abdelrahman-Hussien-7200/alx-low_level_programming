@@ -2,19 +2,18 @@
 #include "dog.h"
 
 /**
-  * init_dog - Ini
+  * init_dog - Initializes a dog structure
   *
-  * @d: structure.
+  * @d: A dog structure.
   *
-  * @name: name
+  * @name: The name of the dog.
   *
-  * @age: age
+  * @age: The age of the dog.
   *
-  * @owner: owner
+  * @owner: The owner of the dog.
   *
   * Return: Nothing
-*/
-
+  */
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 	if (d != NULL)
