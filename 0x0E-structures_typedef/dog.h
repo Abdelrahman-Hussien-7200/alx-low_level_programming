@@ -1,18 +1,14 @@
-#ifndef _HEADER_
+ifndef _HEADER_
 #define _HEADER_
 
 /**
-  * struct dog - att
-  *
-  * @name: name
-  *
-  * @age:age
-  *
-  * @owner: owner
+  * struct dog - Dog attributes
+  * @name: The name of the dog.
+  * @age: The age of the dog.
+  * @owner: The owner of the dog.
   *
   * Description: The attributes of a dog.
-*/
-
+  */
 struct dog
 {
 	char *name;
@@ -21,7 +17,7 @@ struct dog
 };
 
 /**
- * dog_t - Typedef 
+ * dog_t - Typedef for dog structure
  */
 typedef struct dog dog_t;
 
