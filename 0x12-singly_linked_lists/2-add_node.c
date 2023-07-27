@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
   * add_node - Adds a new node
   *

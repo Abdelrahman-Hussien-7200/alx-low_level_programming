@@ -1,3 +1,5 @@
+#include "lists.h"
+
 /**
   * list_len - entery point
   *
