@@ -1,7 +1,9 @@
-#include "lists.h"
+#include <stdio.h>
+
+void print_before_main(void) __attribute__ ((constructor));
 
 /**
- * print_before_main - prints 
+ * print_before_main - prints
 */
 
 void print_before_main(void)
