@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
-  * list_len - entery point
+  * listint_len - entery point
   *
   * @h: A single linked list
   *
   * Return: The number of elements of a list
 */
 
-size_t list_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t count = 0;
 
