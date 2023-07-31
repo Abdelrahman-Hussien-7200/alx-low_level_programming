@@ -1,22 +1,22 @@
 #include "lists.h"
 
 /**
-  * free_list - single linked list.
+  * free_listint - single linked list.
   *
   * @head: The pointer to the first node of linked list
   *
   * Return: Nothing
 */
 
-void free_list(list_t *head)
+void free_listint(listint_t *head)
 {
-	list_t *temp;
+	listint_t *temp;
 
 	while (head)
 	{
 		temp = head;
 		head = head->next;
-		free(temp->str);
+		free(temp->n);
 		free(temp);
 	}
 
