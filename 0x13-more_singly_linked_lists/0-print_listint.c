@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_list - Entry point
+ * print_listint - Entry point
  * @h: pointer to the head of the list
  * Description: single linked
  *
