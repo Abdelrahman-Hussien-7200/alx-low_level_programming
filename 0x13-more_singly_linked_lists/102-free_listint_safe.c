@@ -1,45 +1,19 @@
 /**
- * free_listint_safe - frees a linked list safely
+ * free_listint - frees a linked list
  *
- * @h: double pointer to the head of the linked list
+ * @head: pointer to the head of the linked list
  *
- * Return: the size of the list that was freed
+ * Return: void
 */
 
-size_t free_listint_safe(listint_t **h)
+void free_listint(listint_t *head)
 {
-	size_t count = 0;
-	listint_t *slow, *fast;
+	listint_t *tmp;
 
-	if (h == NULL || *h == NULL)
-		return (0);
-
-	slow = *h;
-	fast = (*h)->next;
-
-	while (fast != NULL && fast < slow)
+	while (head != NULL)
 	{
-		slow = slow->next;
-		fast = fast->next;
-		if (fast != NULL)
-			fast = fast->next;
-	}
-
-	while (*h != NULL)
-	{
-		listint_t *tmp = *h;
-
-		*h = (*h)->next;
+		tmp = head;
+		head = head->next;
 		free(tmp);
-		count++;
-
-		if (*h == slow)
-		{
-			*h = NULL;
-			count++;
-			break;
-		}
 	}
-
-	return (count);
 }
