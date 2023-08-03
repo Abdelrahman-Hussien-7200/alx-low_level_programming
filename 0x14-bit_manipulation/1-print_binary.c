@@ -3,11 +3,11 @@
 /**
  * print_binary - Entry point
  *
- * n: unsigned long int
+ * @n: unsigned long int
  *
  * Description: a function that prints the binary representation of a number
  *
- * @Return: void
+ * Return: void
 */
 
 void print_binary(unsigned long int n)
