@@ -14,19 +14,19 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fds, w, len = 0;
+	int fds, w, length = 0;
 
 	if (filename == NULL)
 		return (-1);
 
 	if (text_content != NULL)
 	{
-		for (len = 0; text_content[len];)
-			len++;
+		for (length = 0; text_content[length];)
+			length++;
 	}
 
 	fds = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	w = write(fds, text_content, len);
+	w = write(fds, text_content, length);
 
 	if (fds == -1 || w == -1)
 		return (-1);
