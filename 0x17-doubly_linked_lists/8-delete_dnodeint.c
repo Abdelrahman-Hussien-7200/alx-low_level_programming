@@ -9,33 +9,45 @@
  *
  * Return: 1 if successful, -1 if the node  not exist.
  */
-
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	if (head == NULL || *head == NULL);
-			return (-1);
+	dlistint_t *head1;
+	dlistint_t *head2;
+	unsigned int n;
 
-	dlistint_t *current = *head;
+	head1 = *head;
 
-	if (index == 0)
+	if (head1 != NULL)
+		while (head1->prev != NULL)
+			head1 = head1->prev;
+
+	n = 0;
+
+	while (head1 != NULL)
 	{
-		*head = current->next;
-		if (*head != NULL)
-			(*head)->prev = NULL;
+		if (n == index)
+		{
+			if (n == 0)
+			{
+				*head = head1->next;
+				if (*head != NULL)
+					(*head)->prev = NULL;
+			}
+			else
+			{
+				head2->next = head1->next;
+
+				if (head1->next != NULL)
+					head1->next->prev = head2;
+			}
+
+			free(head1);
+			return (1);
+		}
+		head2 = head1;
+		head1 = head1->next;
+		n++;
 	}
-	else
-	{
-		for (unsigned int i = 0; i < index && current != NULL; i++)
-			current = current->next;
 
-		if (current == NULL)
-			return (-1);
-
-		current->prev->next = current->next;
-		if (current->next != NULL)
-			current->next->prev = current->prev;
-	}
-
-	free(current);
-	return (1);
+	return (-1);
 }
