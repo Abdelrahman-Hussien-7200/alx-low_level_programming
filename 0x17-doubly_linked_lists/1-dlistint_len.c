@@ -12,17 +12,21 @@
 
 size_t dlistint_len(const dlistint_t *h)
 {
-	size_t n = 0;
-	const dlistint_t *ptr = h;
+	int count;
+
+	count = 0;
 
 	if (h == NULL)
-		return (n);
+		return (count);
+
 	while (h->prev != NULL)
 		h = h->prev;
+
 	while (h != NULL)
 	{
-		n++;
+		count++;
 		h = h->next;
 	}
-	return (n);
+
+	return (count);
 }
