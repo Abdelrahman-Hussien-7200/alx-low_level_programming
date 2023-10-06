@@ -3,7 +3,8 @@
  * hash_table_print - print a hash table in C
  * @ht: hash table
  * Return: printed elements
- */
+*/
+
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int in = 0;
@@ -13,7 +14,7 @@ void hash_table_print(const hash_table_t *ht)
 	if (!ht)
 		return;
 	printf("{");
-	while (in< ht->size)
+	while (in < ht->size)
 	{
 		tem = ht->array[in];
 		while (tem != NULL)

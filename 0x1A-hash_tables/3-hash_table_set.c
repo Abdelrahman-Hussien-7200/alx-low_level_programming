@@ -6,8 +6,8 @@
  * @key: key cannot be empty
  * @value: associated to the key
  * Return: 1 if successful, 0 otherwise
- */
- 
+*/
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int in = 0;
